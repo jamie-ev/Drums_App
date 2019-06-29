@@ -33,6 +33,8 @@ class Drums extends React.Component {
     // console.log('handleKeyPress triggered; current state is: clip ' + this.state.clip + ' and description ' + this.state.description);
     switch(event.keyCode) {
       case 81: // letter Q
+        document.getElementById('dhol').classList.add('black');
+        setTimeout(function(){ document.getElementById('dhol').classList.remove('black'); }, 150);
         this.setState({
           clip: document.getElementById('Q'),
           description: "Dhol"
@@ -42,6 +44,8 @@ class Drums extends React.Component {
         });
         break;
       case 87: // letter W
+        document.getElementById('dholak').classList.add('black');
+        setTimeout(function(){ document.getElementById('dholak').classList.remove('black'); }, 150);
         this.setState({
           clip: document.getElementById('W'),
           description: "Dholak"
@@ -50,6 +54,8 @@ class Drums extends React.Component {
         });
         break;
       case 69: // letter E
+        document.getElementById('hand_drum').classList.add('black');
+        setTimeout(function(){ document.getElementById('hand_drum').classList.remove('black'); }, 150);
         this.setState({
           clip: document.getElementById('E'),
           description: "Hand Drum"
@@ -58,6 +64,8 @@ class Drums extends React.Component {
         });
         break;
       case 65: // letter A
+        document.getElementById('ocean_drum').classList.add('black');
+        setTimeout(function(){ document.getElementById('ocean_drum').classList.remove('black'); }, 150);
         this.setState({
           clip: document.getElementById('A'),
           description: "Ocean Drum"
@@ -66,6 +74,8 @@ class Drums extends React.Component {
         });
         break;
       case 83: // letter S
+        document.getElementById('plastic').classList.add('black');
+        setTimeout(function(){ document.getElementById('plastic').classList.remove('black'); }, 150);
         this.setState({
           clip: document.getElementById('S'),
           description: "Plastic"
@@ -74,6 +84,8 @@ class Drums extends React.Component {
         });
         break;
       case 68: // letter D
+        document.getElementById('snare_tap').classList.add('black');
+        setTimeout(function(){ document.getElementById('snare_tap').classList.remove('black'); }, 150);
         this.setState({
           clip: document.getElementById('D'),
           description: "Snare Tap"
@@ -82,6 +94,8 @@ class Drums extends React.Component {
         });
         break;
       case 90: // letter Z
+        document.getElementById('snare_throw').classList.add('black');
+        setTimeout(function(){ document.getElementById('snare_throw').classList.remove('black'); }, 150);
         this.setState({
           clip: document.getElementById('Z'),
           description: "Snare Throw"
@@ -90,6 +104,8 @@ class Drums extends React.Component {
         });
         break;
       case 88: // letter X
+        document.getElementById('snare').classList.add('black');
+        setTimeout(function(){ document.getElementById('snare').classList.remove('black'); }, 150);
         this.setState({
           clip: document.getElementById('X'),
           description: "Snare"
@@ -98,6 +114,8 @@ class Drums extends React.Component {
         });
         break;
       case 67: // letter C
+        document.getElementById('tribal_drum').classList.add('black');
+        setTimeout(function(){ document.getElementById('tribal_drum').classList.remove('black'); }, 150);
         this.setState({
           clip: document.getElementById('C'),
           description: "Tribal Drum"

@@ -90,8 +90,8 @@ h1 {
   cursor: pointer;
 }
 
-.drum-pad:active {
-  background-color: #000;
+.drum-pad:active, .black {
+  background-color: #000 !important;
 }
 
 @media (max-width: 1500px) {
