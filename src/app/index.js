@@ -1,24 +1,29 @@
+// React code
 var React = require('react');
 var ReactDOM = require('react-dom');
 
+// the main React component
 class Drums extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      clip: null,
-      description: "[Click a button!]"
+      clip: null, // the audio clip to be played
+      description: "[Click a button!]" // the display name of that clip
     };
     this.handleKeyPress = this.handleKeyPress.bind(this);
     this.handleClick = this.handleClick.bind(this);
     this.playClip = this.playClip.bind(this);
   }
+  // add event listener for keyboard input
   componentDidMount() {
     // console.log('component did mount, handleKeyPress added');
     window.addEventListener("keydown", this.handleKeyPress);
   }
+  // remove event listener for keyboard input
   componentWillUnmount() {
     window.removeEventListener("keydown", this.handleKeyPress);
   }
+  // handle click on one of the clip trigger buttons
   handleClick(event) {
     // console.log('handleClick triggered; current state is: clip ' + this.state.clip + ' and description ' + this.state.description);
     this.setState({
@@ -29,8 +34,10 @@ class Drums extends React.Component {
       this.playClip(); // pass this in as a callback function to setState() so it only plays once state has been updated
     });
   }
+  // handle keyboard input for the clip trigger buttons
   handleKeyPress(event) {
     // console.log('handleKeyPress triggered; current state is: clip ' + this.state.clip + ' and description ' + this.state.description);
+    // determine next steps based on the keycode
     switch(event.keyCode) {
       case 81: // letter Q
         // reset the clip if it was just clicked
@@ -181,6 +188,7 @@ class Drums extends React.Component {
         break;
     }
   }
+  // play the currently selected audio file
   playClip() {
     // console.log('playClip triggered');
     this.state.clip.play(); // play the audio elem currently stored in state.clip
@@ -205,5 +213,6 @@ class Drums extends React.Component {
   }
 }
 
+// render the component to the DOM
 ReactDOM.render(<Drums />, document.getElementById('drum-machine'));
 
