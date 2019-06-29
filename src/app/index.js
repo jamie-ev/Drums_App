@@ -1,3 +1,5 @@
+var React = require('react');
+var ReactDOM = require('react-dom');
 
 class Drums extends React.Component {
   constructor(props) {
