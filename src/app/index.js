@@ -33,8 +33,14 @@ class Drums extends React.Component {
     // console.log('handleKeyPress triggered; current state is: clip ' + this.state.clip + ' and description ' + this.state.description);
     switch(event.keyCode) {
       case 81: // letter Q
+        // reset the clip if it was just clicked
+        if (this.state.description === "Dhol") {
+          this.state.clip.currentTime = 0;
+        }
+        // mimic keyboard click (:active) CSS change
         document.getElementById('dhol').classList.add('black');
         setTimeout(function(){ document.getElementById('dhol').classList.remove('black'); }, 150);
+        // update the current clip and play it
         this.setState({
           clip: document.getElementById('Q'),
           description: "Dhol"
@@ -44,8 +50,14 @@ class Drums extends React.Component {
         });
         break;
       case 87: // letter W
+        // reset the clip if it was just clicked
+        if (this.state.description === "Dholak") {
+          this.state.clip.currentTime = 0;
+        }
+        // mimic keyboard click (:active) CSS change
         document.getElementById('dholak').classList.add('black');
         setTimeout(function(){ document.getElementById('dholak').classList.remove('black'); }, 150);
+        // update the current clip and play it
         this.setState({
           clip: document.getElementById('W'),
           description: "Dholak"
@@ -54,8 +66,14 @@ class Drums extends React.Component {
         });
         break;
       case 69: // letter E
+        // reset the clip if it was just clicked
+        if (this.state.description === "Hand Drum") {
+          this.state.clip.currentTime = 0;
+        }
+        // mimic keyboard click (:active) CSS change
         document.getElementById('hand_drum').classList.add('black');
         setTimeout(function(){ document.getElementById('hand_drum').classList.remove('black'); }, 150);
+        // update the current clip and play it
         this.setState({
           clip: document.getElementById('E'),
           description: "Hand Drum"
@@ -64,8 +82,14 @@ class Drums extends React.Component {
         });
         break;
       case 65: // letter A
+        // reset the clip if it was just clicked
+        if (this.state.description === "Ocean Drum") {
+          this.state.clip.currentTime = 0;
+        }
+        // mimic keyboard click (:active) CSS change
         document.getElementById('ocean_drum').classList.add('black');
         setTimeout(function(){ document.getElementById('ocean_drum').classList.remove('black'); }, 150);
+        // update the current clip and play it
         this.setState({
           clip: document.getElementById('A'),
           description: "Ocean Drum"
@@ -74,8 +98,14 @@ class Drums extends React.Component {
         });
         break;
       case 83: // letter S
+        // reset the clip if it was just clicked
+        if (this.state.description === "Plastic") {
+          this.state.clip.currentTime = 0;
+        }
+        // mimic keyboard click (:active) CSS change
         document.getElementById('plastic').classList.add('black');
         setTimeout(function(){ document.getElementById('plastic').classList.remove('black'); }, 150);
+        // update the current clip and play it
         this.setState({
           clip: document.getElementById('S'),
           description: "Plastic"
@@ -84,8 +114,14 @@ class Drums extends React.Component {
         });
         break;
       case 68: // letter D
+        // reset the clip if it was just clicked
+        if (this.state.description === "Snare Tap") {
+          this.state.clip.currentTime = 0;
+        }
+        // mimic keyboard click (:active) CSS change
         document.getElementById('snare_tap').classList.add('black');
         setTimeout(function(){ document.getElementById('snare_tap').classList.remove('black'); }, 150);
+        // update the current clip and play it
         this.setState({
           clip: document.getElementById('D'),
           description: "Snare Tap"
@@ -94,8 +130,14 @@ class Drums extends React.Component {
         });
         break;
       case 90: // letter Z
+        // reset the clip if it was just clicked
+        if (this.state.description === "Snare Throw") {
+          this.state.clip.currentTime = 0;
+        }
+        // mimic keyboard click (:active) CSS change
         document.getElementById('snare_throw').classList.add('black');
         setTimeout(function(){ document.getElementById('snare_throw').classList.remove('black'); }, 150);
+        // update the current clip and play it
         this.setState({
           clip: document.getElementById('Z'),
           description: "Snare Throw"
@@ -104,8 +146,14 @@ class Drums extends React.Component {
         });
         break;
       case 88: // letter X
+        // reset the clip if it was just clicked
+        if (this.state.description === "Snare") {
+          this.state.clip.currentTime = 0;
+        }
+        // mimic keyboard click (:active) CSS change
         document.getElementById('snare').classList.add('black');
         setTimeout(function(){ document.getElementById('snare').classList.remove('black'); }, 150);
+        // update the current clip and play it
         this.setState({
           clip: document.getElementById('X'),
           description: "Snare"
@@ -114,8 +162,14 @@ class Drums extends React.Component {
         });
         break;
       case 67: // letter C
+        // reset the clip if it was just clicked
+        if (this.state.description === "Tribal Drum") {
+          this.state.clip.currentTime = 0;
+        }
+        // mimic keyboard click (:active) CSS change
         document.getElementById('tribal_drum').classList.add('black');
         setTimeout(function(){ document.getElementById('tribal_drum').classList.remove('black'); }, 150);
+        // update the current clip and play it
         this.setState({
           clip: document.getElementById('C'),
           description: "Tribal Drum"
