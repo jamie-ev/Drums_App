@@ -189,15 +189,15 @@ class Drums extends React.Component {
     return (
     <div id="drum-box" className="container-center">
       <h1>Drum Machine</h1>
-      <div className="drum-pad" id="dhol" onClick={this.handleClick}><audio className="clip" id="Q"><source src="media/dhol.mp3" type="audio/mpeg"></source></audio>Q</div>
-      <div className="drum-pad" id="dholak" onClick={this.handleClick}><audio className="clip" id="W"><source src="media/dholak.mp3" type="audio/mpeg"></source></audio>W</div>
-      <div className="drum-pad" id="hand_drum" onClick={this.handleClick}><audio className="clip" id="E"><source src="media/hand_drum.mp3" type="audio/mpeg"></source></audio>E</div>
-      <div className="drum-pad" id="ocean_drum" onClick={this.handleClick}><audio className="clip" id="A"><source src="media/ocean_drum.mp3" type="audio/mpeg"></source></audio>A</div>
-      <div className="drum-pad" id="plastic" onClick={this.handleClick}><audio className="clip" id="S"><source src="media/plastic.mp3" type="audio/mpeg"></source></audio>S</div>
-      <div className="drum-pad" id="snare_tap" onClick={this.handleClick}><audio className="clip" id="D"><source src="media/snare_tap.mp3" type="audio/mpeg"></source></audio>D</div>
-      <div className="drum-pad" id="snare_throw" onClick={this.handleClick}><audio className="clip" id="Z"><source src="media/snare_throw.mp3" type="audio/mpeg"></source></audio>Z</div>
-      <div className="drum-pad" id="snare" onClick={this.handleClick}><audio className="clip" id="X"><source src="media/snare.mp3" type="audio/mpeg"></source></audio>X</div>
-      <div className="drum-pad" id="tribal_drum" onClick={this.handleClick}><audio className="clip" id="C"><source src="media/tribal_drum.mp3" type="audio/mpeg"></source></audio>C</div>
+      <div className="drum-pad" id="dhol" aria-label="dhol" role="button" onClick={this.handleClick}><audio className="clip" id="Q"><source src="media/dhol.mp3" type="audio/mpeg"></source></audio>Q</div>
+      <div className="drum-pad" id="dholak" aria-label="dholak" role="button" onClick={this.handleClick}><audio className="clip" id="W"><source src="media/dholak.mp3" type="audio/mpeg"></source></audio>W</div>
+      <div className="drum-pad" id="hand_drum" aria-label="hand drum" role="button" onClick={this.handleClick}><audio className="clip" id="E"><source src="media/hand_drum.mp3" type="audio/mpeg"></source></audio>E</div>
+      <div className="drum-pad" id="ocean_drum" aria-label="ocean drum" role="button" onClick={this.handleClick}><audio className="clip" id="A"><source src="media/ocean_drum.mp3" type="audio/mpeg"></source></audio>A</div>
+      <div className="drum-pad" id="plastic" aria-label="plastic" role="button" onClick={this.handleClick}><audio className="clip" id="S"><source src="media/plastic.mp3" type="audio/mpeg"></source></audio>S</div>
+      <div className="drum-pad" id="snare_tap" aria-label="snare tap" role="button" onClick={this.handleClick}><audio className="clip" id="D"><source src="media/snare_tap.mp3" type="audio/mpeg"></source></audio>D</div>
+      <div className="drum-pad" id="snare_throw" aria-label="snare throw" role="button" onClick={this.handleClick}><audio className="clip" id="Z"><source src="media/snare_throw.mp3" type="audio/mpeg"></source></audio>Z</div>
+      <div className="drum-pad" id="snare" aria-label="snare" role="button" onClick={this.handleClick}><audio className="clip" id="X"><source src="media/snare.mp3" type="audio/mpeg"></source></audio>X</div>
+      <div className="drum-pad" id="tribal_drum" aria-label="tribal drum" role="button" onClick={this.handleClick}><audio className="clip" id="C"><source src="media/tribal_drum.mp3" type="audio/mpeg"></source></audio>C</div>
       <div id="display">{this.state.description}</div> {/* display a description of the clip being played */}
       <p id="footer">Designed & Coded 2019 by Jamie Ev.</p>
     </div>
