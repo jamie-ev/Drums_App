@@ -26,6 +26,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
+/* drum app */
 #drum-box {
   width: 250px;
   display: grid;
@@ -58,6 +59,7 @@ h1 {
   color: #011927;
 }
 
+/* display area showing current clip */
 #display {
   grid-area: desc;
   text-align: center;
@@ -69,6 +71,7 @@ h1 {
   text-transform: uppercase;
 }
 
+/* clip trigger buttons */
 .drum-pad {
   background-color: #5c5c5c;
   line-height: 70px;
@@ -90,16 +93,12 @@ h1 {
   cursor: pointer;
 }
 
+/* .black is added via JS to mimic :active for keyboard input */
 .drum-pad:active, .black {
   background-color: #000 !important;
 }
 
-@media (max-width: 1500px) {
-  body {
-    background-repeat: repeat;
-  }
-}
-
+/* responsive design for tablets and smaller */
 @media (max-width: 620px) {
   #drum-box {
     width: 180px;
@@ -108,16 +107,13 @@ h1 {
     grid-template-rows: 60px 60px 60px 60px 60px 5px;
     grid-gap: 15px;
   }
-  
   .drum-pad {
     line-height: 60px;
   }
-  
   h1 {
     line-height: 60px;
     font-size: 28px;
   }
-  
   #display {
     line-height: 60px;
   }
