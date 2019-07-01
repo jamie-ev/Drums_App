@@ -1,4 +1,4 @@
-# Pomodoro App
+# Drums App
 Built using React.js
 
 ## Description
